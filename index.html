@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <!--? CND : tailwind and Daisy UI -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.10.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- ? Font : syne -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- ? Font : clash display -->
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=clash-display@600,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ? Tailwind Custom Color -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              Primary: "#EC1352",
+              secondary: "#75F",
+              gradient: "linear-gradient(to right, #340897, #5d0469, #88013b)",
+            },
+          },
+        },
+      };
+    </script>
+    <!-- ? FONTAwosome -->
+    <script
+      src="https://kit.fontawesome.com/9a03863fc1.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- ? CSS -->
+    <style>
+      .font-syne {
+        font-family: "Syne", sans-serif;
+      }
+      .font-clash_display {
+        font-family: "Clash Display", sans-serif;
+      }
+      .vertical-line {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 1px;
+        height: 6200px;
+        background: rgba(255, 255, 255, 0.05);
+        display: inline-block;
+        margin: 0 20px;
+      }
+      
+      .bg-gradient {
+        background-image: radial-gradient(
+          circle at 50% 0%,
+          rgb(84, 7, 45),
+          rgb(3, 0, 24)
+        );
+      }
+      .bg-first{
+        background-image: linear-gradient(315deg, #54072d 0%, #090e24 29%, #090e24 71%, #3a184d 100%);
+      }
+    </style>
+  </head>
+  <body class="container mx-auto font-syne">
+    <!-- Vertical lines -->
+    <div class="vertical-line" style="left: 250px"></div>
+    <div class="vertical-line" style="left: 450px"></div>
+    <div class="vertical-line" style="left: 650px"></div>
+    <div class="vertical-line" style="left: 850px"></div>
+
+    <div class="vertical-line" style="right: 850px"></div>
+    <div class="vertical-line" style="right: 650px"></div>
+    <div class="vertical-line" style="right: 450px"></div>
+    <div class="vertical-line" style="right: 250px"></div>
+    <!-- End of vertical lines -->
+
+    <!-- ? Header -->
+    <header class="bg-first h-[785px]">
+      <!-- Navbar start -->
+      <div class="px-6 lg:px-36 navbar">
+          <div class="navbar-start">
+              <div class="dropdown">
+                  <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24"
+                          stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M4 6h16M4 12h8m-8 6h16" />
+                      </svg>
+                  </div>
+                  <ul tabindex="0"
+                      class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                      <li><a>Home</a></li>
+                      <li><a>About Us</a></li>
+                      <li><a>Service</a></li>
+                      <li><a>Portfolio</a></li>
+                      <li><a>Blog</a></li>
+                  </ul>
+              </div>
+              <div class="flex items-center gap-3">
+                  <img class="w-10 h-10" src="./Assets/logo.svg" alt="" />
+                  <a class="text-xl font-bold text-white lg:text-2xl">Portfolio</a>
+              </div>
+          </div>
+          <div class="hidden navbar-center lg:flex">
+              <ul class="px-1 text-lg font-medium text-white lg:text-xl menu menu-horizontal">
+                  <li><a class="hover:text-red-600">Home</a></li>
+                  <li><a class="hover:text-red-600">About Us</a></li>
+                  <li><a class="hover:text-red-600">Service</a></li>
+                  <li><a class="hover:text-red-600">Portfolio</a></li>
+                  <li><a class="hover:text-red-600">Blog</a></li>
+              </ul>
+          </div>
+          <div class="navbar-end">
+              <a class="text-[16px] lg:text-xl font-bold text-white btn bg-gradient-to-r from-[#2809A5] to-[#96002B] py-2 px-4 rounded-lg">Contact</a>
+          </div>
+      </div>
+      <!-- Navbar end -->
+      <!-- Header Details start -->
+      <div class="items-center mt-20">
+          <h1 class="text-[24px] lg:text-[48px] flex justify-center gap-3 font-semibold mb-[14px] text-center text-Primary">
+              Hello, I'm <span class="flex items-center bg-[#75F] w-44 rounded-full justify-center">
+                  <img class="w-15" src="./Assets/star.png" alt="">
+                  <span class="text-white text-[16px] lg:text-[32px]">UI/UX</span>
+                  <img class="w-15" src="./Assets/star.png" alt="">
+              </span> Designer
+          </h1>
+          <h2 class="text-[48px] lg:text-[70px] text-center font-bold mb-[30px] text-white">
+              Show My Design & Portfolio
+          </h2>
+          <p class="text-center text-[16px] lg:text-[24px] mb-[50px] text-white">
+              Lorem Ipsum is not simply random text. It has roots in a piece of 45 <br /> BC, making it over 2000 years
+              old.
+          </p>
+          <div class="flex justify-center">
+              <button class="text-[14px] lg:text-[18px] mb-[227px] font-bold btn text-white bg-gradient-to-r from-[#2809A5] to-[#96002B] py-2 px-4 rounded-lg">
+                  View All Work
+              </button>
+          </div>
+      </div>
+      <!-- Header Details end-->
+  </header>
+  
+    <main>
+      <!-- swiper start-->
+      <section>
+        <div class="flex flex-wrap justify-center gap-3 py-5 my-4 text-xl text-black lg:text-2xl font-clash_display">
+            <div class="flex items-center">
+                <h2>UX Design</h2>
+                <img class="w-8 ml-2" src="./Assets/Star2.svg" alt="" />
+            </div>
+            <div class="flex items-center mt-2 lg:mt-0">
+                <h2>UI Design</h2>
+                <img class="w-8 ml-2" src="./Assets/Star2.svg" alt="" />
+            </div>
+            <div class="flex items-center mt-2 lg:mt-0">
+                <h2>Graphic Design</h2>
+                <img class="w-8 ml-2" src="./Assets/Star2.svg" alt="" />
+            </div>
+            <div class="flex items-center mt-2 lg:mt-0">
+                <h2>Mobile App Development</h2>
+                <img class="w-8 ml-2" src="./Assets/Star2.svg" alt="" />
+            </div>
+            <div class="flex items-center mt-2 lg:mt-0">
+                <h2>UX Design</h2>
+                <img class="w-8 ml-2" src="./Assets/Star2.svg" alt="" />
+            </div>
+            <div class="flex items-center mt-2 lg:mt-0">
+                <h2>UI Design</h2>
+                <img class="w-8 ml-2" src="./Assets/Star2.svg" alt="" />
+            </div>
+        </div>
+    </section>
+    
+      <!-- swiper end-->
+      <!-- ? Services -->
+      <section class="flex flex-col lg:flex-row gap-10 lg:gap-20 justify-evenly bg-[#030307] px-6 lg:px-24 py-24  relative ">
+        <!-- 1st div -->
+        <div class="w-full lg:w-1/2">
+            <h2 class="mb-4 text-2xl font-bold lg:text-4xl text-secondary lg:mb-10">Services</h2>
+            <h2 class="mb-4 text-4xl font-bold text-white lg:text-6xl lg:mb-12">
+                My Awesome Service
+            </h2>
+            <p class="mb-10 text-lg font-semibold text-justify text-gray-600 lg:text-xl lg:mb-20">
+                As a distinguished UI/UX design firm, we offer comprehensive
+                solutions encompassing research, wireframing, UI design, and
+                development. Here are our specialized services:
+            </p>
+            <button class="text-xl lg:text-2xl font-bold text-white btn bg-gradient-to-r from-[#2809A5] to-[#96002B] btn-lg rounded-lg">
+                View All Work
+            </button>
+
+            <img class="absolute bottom-0 left-0 hidden lg:block" src="./Assets/deco1.png" alt="">
+        </div>
+        <!-- 2nd div -->
+        <div class="w-full lg:w-1/2 lg:mt-0">
+          <div class="grid grid-cols-2 gap-6 lg:grid-cols-1">
+              <div class="flex items-center justify-center card px-6 py-10 bg-[#090916] border-[#2D3455] border card-side">
+                  <div>
+                      <img class="w-20" src="./Assets/icon1.png" alt="UX icon" />
+                  </div>
+                  <div class="card-body">
+                      <h2 class="text-white card-title">UX Design</h2>
+                      <p class="text-[#BBB] text-base lg:text-lg">
+                          Exceptional UX isn't just design; it's a journey that builds trust, forges loyalty.
+                      </p>
+                  </div>
+                  <div>
+                      <button class="btn btn-circle border-[#2D3455] btn-outline">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                              <path d="M19 12L13 18M19 12L13 6M19 12L5 12" stroke="#7755FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                          </svg>
+                      </button>
+                  </div>
+              </div>
+              <div class="flex items-center justify-center card px-6 py-10 bg-[#090916] border-[#2D3455] border card-side">
+                  <div>
+                      <img class="w-20" src="./Assets/icon1.png" alt="UX icon" />
+                  </div>
+                  <div class="card-body">
+                      <h2 class="text-white card-title">UX Design</h2>
+                      <p class="text-[#BBB] text-base lg:text-lg">
+                          Exceptional UX isn't just design; it's a journey that builds trust, forges loyalty.
+                      </p>
+                  </div>
+                  <div>
+                      <button class="btn btn-circle border-[#2D3455] btn-outline">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                              <path d="M19 12L13 18M19 12L13 6M19 12L5 12" stroke="#7755FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                          </svg>
+                      </button>
+                  </div>
+              </div>
+              <div class="flex items-center justify-center card px-6 py-10 bg-[#090916] border-[#2D3455] border card-side">
+                  <div>
+                      <img class="w-20" src="./Assets/icon1.png" alt="UX icon" />
+                  </div>
+                  <div class="card-body">
+                      <h2 class="text-white card-title">UX Design</h2>
+                      <p class="text-[#BBB] text-base lg:text-lg">
+                          Exceptional UX isn't just design; it's a journey that builds trust, forges loyalty.
+                      </p>
+                  </div>
+                  <div>
+                      <button class="btn btn-circle border-[#2D3455] btn-outline">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                              <path d="M19 12L13 18M19 12L13 6M19 12L5 12" stroke="#7755FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                          </svg>
+                      </button>
+                  </div>
+              </div>
+              <div class="flex items-center justify-center card px-6 py-10 bg-[#090916] border-[#2D3455] border card-side">
+                  <div>
+                      <img class="w-20" src="./Assets/icon1.png" alt="UX icon" />
+                  </div>
+                  <div class="card-body">
+                      <h2 class="text-white card-title">UX Design</h2>
+                      <p class="text-[#BBB] text-base lg:text-lg">
+                          Exceptional UX isn't just design; it's a journey that builds trust, forges loyalty.
+                      </p>
+                  </div>
+                  <div>
+                      <button class="btn btn-circle border-[#2D3455] btn-outline">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                              <path d="M19 12L13 18M19 12L13 6M19 12L5 12" stroke="#7755FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                          </svg>
+                      </button>
+                  </div>
+              </div>
+             
+          </div>
+      </div>
+      
+        
+    </section>
+    
+      <!-- ? 3rd section : about us -->
+      <section class="bg-[#edf0f2] py-12 px-8 lg:px-24">
+        <div class="flex flex-col lg:flex-row lg:items-center">
+          <div class="w-full lg:w-1/2">
+            <h2 class="mb-4 text-xl font-bold lg:mb-8 text-secondary">About Us</h2>
+            <h2 class="mb-6 text-4xl font-bold lg:mb-12 lg:text-5xl">Why Did You Choose Me?</h2>
+            <p class="mb-12 text-lg font-semibold lg:mb-16 lg:text-xl">
+              We're your partners in crafting digital that blend innovation with
+              functionality "consultation discover apartments. ndulgence off
+              under folly death wrote cause her way spite. Plan upon yet way get
+              cold spot its week.
+            </p>
+            <button class="text-lg lg:text-xl font-bold text-white btn bg-gradient-to-r from-[#2809A5] to-[#96002B] btn-lg rounded-lg">
+              Download CV
+            </button>
+          </div>
+          <div class="grid w-full grid-cols-2 gap-4 p-4 lg:w-1/2 lg:p-24">
+            <div class="flex flex-col items-center justify-center p-6 bg-white shadow-lg rounded-2xl">
+              <div>
+                <h2 class="text-4xl font-semibold text-center lg:text-5xl text-secondary font-clash_display">4+</h2>
+              </div>
+              <div>
+                <h2 class="text-lg font-normal text-center lg:text-xl">Year Of Experience</h2>
+              </div>
+            </div>
+            <!--  -->
+            <div class="flex flex-col items-center justify-center p-6 bg-white shadow-lg rounded-2xl">
+              <div>
+                <h2 class="text-4xl font-semibold text-center lg:text-5xl text-Primary font-clash_display">234+</h2>
+              </div>
+              <div>
+                <h2 class="text-lg font-normal text-center lg:text-xl">Completed Projects</h2>
+              </div>
+            </div>
+            <!--  -->
+            <div class="flex flex-col items-center justify-center p-6 bg-white shadow-lg rounded-2xl">
+              <div>
+                <h2 class="text-4xl font-semibold text-center lg:text-5xl text-Primary font-clash_display">80+</h2>
+              </div>
+              <div>
+                <h2 class="text-lg font-normal text-center lg:text-xl">Happy Customers</h2>
+              </div>
+            </div>
+            <!--  -->
+            <div class="flex flex-col items-center justify-center p-6 bg-white shadow-lg rounded-2xl">
+              <div>
+                <h2 class="text-4xl font-semibold text-center lg:text-5xl text-secondary font-clash_display">4.9/5</h2>
+              </div>
+              <div>
+                <h2 class="text-lg font-normal text-center lg:text-xl">Average Rating</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!--? 4th section protfolio  -->
+      <section class="bg-[#030307]">
+        <div class="pt-16 mb-8">
+            <h2 class="text-xl font-bold text-center lg:text-2xl text-primary">Portfolio</h2>
+            <h2 class="text-4xl font-bold text-center text-white lg:text-5xl">
+                My Latest Projects
+            </h2>
+            <div class="mt-6">
+                <nav>
+                    <ul class="flex flex-wrap justify-center gap-4 text-white lg:gap-10">
+                        <li class="mb-4 lg:mb-0"><a href="#">Portfolio</a></li>
+                        <li class="mb-4 lg:mb-0"><a href="#">SEO</a></li>
+                        <li class="mb-4 lg:mb-0"><a href="#">UI/UX Design</a></li>
+                        <li class="mb-4 lg:mb-0"><a href="#">Web Design</a></li>
+                        <li class="mb-4 lg:mb-0"><a href="#">Web Development</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    
+        <div class="w-full px-24 py-24 mx-auto lg:w-8/12">
+          <div class="grid grid-cols-2 gap-4 mx-auto place-items-center lg:grid-cols-2">
+              <div class="flex flex-col w-full max-w-[300px]  ">
+                  <img class="object-cover w-full h-[300px]" src="./Assets/img1.png" alt="" />
+                  <p class="mt-4 text-lg font-bold text-white">
+                      Wireframe is a basic layout of the fundamental design.
+                  </p>
+              </div>
+              <div class="flex flex-col w-full max-w-[300px]">
+                  <img class="object-cover w-full h-[300px]" src="./Assets/img2.png" alt="" />
+                  <p class="mt-4 text-lg font-bold text-white">
+                      Wireframe is a basic layout of the fundamental design.
+                  </p>
+              </div>
+              
+              <div class="flex flex-col w-full max-w-[300px]">
+                  <img class="object-cover w-full h-[300px]" src="./Assets/img3.png" alt="" />
+                  <p class="mt-4 text-lg font-bold text-white">
+                      Wireframe is a basic layout of the fundamental design.
+                  </p>
+              </div>
+              <div class="flex flex-col w-full max-w-[300px]">
+                  <img class="object-cover w-full h-[300px]" src="./Assets/img4.png" alt="" />
+                  <p class="mt-4 text-lg font-bold text-white">
+                      Wireframe is a basic layout of the fundamental design.
+                  </p>
+              </div>
+          </div>
+      </div>
+      
+      
+    </section>
+    
+      <!--? section 5th happy client -->
+      <section class="p-8 bg-gradient lg:px-24 lg:py-24">
+        <div class="mb-11">
+            <h1 class="text-5xl font-bold text-center text-white">Happy Clients</h1>
+            <p class="text-lg font-semibold text-center text-white">
+                Lorem Ipsum is not simply random text. It has roots in a piece of 45 BC, making it over 2000 years old.
+            </p>
+        </div>
+
+
+        <div class="grid grid-cols-1 gap-4 rounded-lg md:grid-cols-2 lg:grid-cols-4 place-items-stretch">
+            <div class="flex justify-center items-center p-6 rounded-lg bg-[#100d24]">
+                <img src="./Assets/Group1.svg" alt="" class="h-auto max-w-full lg:p-6" />
+            </div>
+            <div class="flex justify-center items-center p-6 rounded-lg bg-[#100d24]">
+                <img src="./Assets/group2.svg" alt="" class="h-auto max-w-full lg:p-6" />
+            </div>
+            <div class="flex justify-center items-center p-6 rounded-lg bg-[#100d24]">
+                <img src="./Assets/group3.svg" alt="" class="h-auto max-w-full lg:p-6" />
+            </div>
+            <div class="flex justify-center items-center p-6 rounded-lg bg-[#100d24]">
+                <img src="./Assets/Group4.svg" alt="" class="h-auto max-w-full lg:p-6" />
+            </div>
+            <div class="flex justify-center items-center p-6 rounded-lg bg-[#100d24]">
+                <img src="./Assets/Group2.svg" alt="" class="h-auto max-w-full lg:p-6" />
+            </div>
+            <div class="flex justify-center items-center p-6 rounded-lg bg-[#100d24]">
+                <img src="./Assets/Group3.svg" alt="" class="h-auto max-w-full lg:p-6" />
+            </div>
+            <div class="flex justify-center items-center p-6 rounded-lg bg-[#100d24]">
+                <img src="./Assets/Group4.svg" alt="" class="h-auto max-w-full lg:p-6" />
+            </div>
+            <div class="flex justify-center items-center p-6 rounded-lg bg-[#100d24]">
+                <img src="./Assets/Group1.svg" alt="" class="h-auto max-w-full lg:p-6" />
+            </div>
+          </div>
+    </section>
+    
+      <!-- 7th section -->
+      <section class="bg-[#8274ec]">
+        <div class="relative flex items-center justify-center py-24 px-14">
+          <!-- Font part -->
+          <div
+            class="z-30 h-[386px] w-[686px] flex-shrink-0 rounded-2xl bg-white px-6 py-12"
+          >
+            <h2 class="text-6xl font-bold">,,</h2>
+            <p>
+              consultation discover apartments. ndulgence off under folly death
+              wrote cause her way spite. Plan upon yet way get cold spot its
+              week. Almost do am or limits hearts.
+            </p>
+            <!--  -->
+            <div class="mt-6 font-bold text-center text-black">
+              <h1>Jhon Smith</h1>
+              <h1>Product Manager</h1>
+            </div>
+            <div class="text-center text-pink-600">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="relative flex items-center justify-center">
+              <img
+                class="rounded-full w-[92px] h-[92px] absolute top-[88px] border-white border-4"
+                src="./Assets/profile.png"
+                alt=""
+              />
+              <svg
+                class="absolute top-20"
+                xmlns="http://www.w3.org/2000/svg"
+                width="108"
+                height="108"
+                viewBox="0 0 108 108"
+                fill="none"
+              >
+                <circle
+                  cx="54"
+                  cy="54"
+                  r="50"
+                  stroke="#7352F6"
+                  stroke-width="8"
+                />
+              </svg>
+            </div>
+          </div>
+
+          <!-- Middle part -->
+          <div
+            class="absolute z-20 h-[335px] w-[722px] flex-shrink-0 rounded-2xl bg-white opacity-50"
+          ></div>
+          <!-- Last part -->
+          <div
+            class="absolute z-10 h-[297px] w-[756px] flex-shrink-0 rounded-2xl bg-white opacity-20"
+          ></div>
+        </div>
+      </section>
+      <!-- ? latest blog -->
+      <section class="py-12 lg:py-24 space-y-12  px-4 lg:px-40 bg-[#030307]">
+        <div class="flex flex-col items-center justify-center text-white lg:flex-row lg:justify-between lg:gap-4">
+            <div>
+                <h2 class="text-3xl font-bold lg:text-5xl">Latest Blog</h2>
+                <p class="mt-2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum illo nisi recusandae reprehenderit corporis distinctio ipsa?
+                </p>
+            </div>
+            <button class="mt-4 lg:mt-0 text-base lg:text-[18px] font-bold text-white btn bg-gradient-to-r from-[#2809A5] to-[#96002B] rounded-lg">
+                See All Posts
+            </button>
+        </div>
+        <div class="grid grid-cols-1 gap-8 text-white lg:grid-cols-2 lg:gap-4">
+            <div class="flex flex-col items-center justify-center lg:items-start">
+                <img class="w-full rounded-xl" src="./Assets/thum1.png" alt="" />
+                <h2 class="mt-6 text-lg font-bold lg:text-base">UI/UX Design</h2>
+                <p class="mt-2">
+                    Design Unraveled: Behind the Scenes of UI/UX Magic
+                </p>
+                <button class="mt-4 lg:mt-6 btn btn-outline btn-secondary">
+                    See More <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                </button>
+            </div>
+            <div class="flex flex-col items-center justify-center lg:items-start">
+                <img class="w-full rounded-xl" src="./Assets/thum2.png" alt="" />
+                <h2 class="mt-6 text-lg font-bold lg:text-base">UI/UX Design</h2>
+                <p class="mt-2">
+                    Design Unraveled: Behind the Scenes of UI/UX Magic
+                </p>
+                <button class="mt-4 lg:mt-6 btn btn-outline btn-secondary">
+                    See More <span><i class="fa-solid fa-arrow-right-long"></i></span>
+                </button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+      <div class="flex flex-col items-center px-4 py-12 border lg:flex-row lg:py-24 lg:px-14">
+        <div class="flex flex-col items-center justify-center w-full lg:flex-row lg:w-1/2 lg:mr-4">
+            <div>
+                <h2 class="text-lg font-bold lg:text-xl">Subscribe</h2>
+                <h2 class="text-3xl font-bold leading-tight lg:text-5xl lg:ml-2">
+                    Subscribe To <br class="hidden lg:block" />
+                    Get Latest <br class="hidden lg:block" />
+                    Update From Us
+                </h2>
+            </div>
+            <div class="hidden ml-4 lg:block">
+                <img src="./Assets/arrow.png" alt="" />
+            </div>
+        </div>
+        <div class="w-full mt-4 space-y-4 lg:w-1/2 lg:space-y-8 lg:mt-0">
+            <p class="text-sm lg:text-base">
+                "Consultation discover apartments. ndulgence off sus under folly death wrote caa discover apartments
+            </p>
+            <fieldset class="w-full form-control lg:w-80">
+                <label class="label">
+                    <span class="label-text">Enter your email address</span>
+                </label>
+                <div class="flex join">
+                    <input
+                        type="text"
+                        placeholder="Email address"
+                        class="input input-bordered join-item"
+                    />
+                    <button class="ml-2 btn btn-primary join-item">Subscribe</button>s
+                </div>
+            </fieldset>
+        </div>
+    </div>
+    </footer>
+  </body>
+</html>
